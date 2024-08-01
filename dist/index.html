@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <title>bootstrap</title>
+    </head>
+    <body>
+        <section class="form">
+            <form>
+                <div class="user_info">
+                    <input required placeholder="Имя" ="text" id="name" class="inp" />
+                    <input required placeholder="Фамилия" ="text" id="surname" class="inp" />
+                    <input required type="email" placeholder="Ваша-почта@mail.ru" id="email" class="inp" />
+                    <input required type="date" id="date" class="inp" />
+                </div>
+                <div class="card">
+                    <div>
+                        <input
+                            required
+                            type="text"
+                            id="datalist-card"
+                            list="datalist"
+                            placeholder="Выберите карту"
+                            class="inp"
+                        />
+
+                        <datalist id="datalist">
+                            <option value="Visa" />
+                            <option value="MasterCard" />
+                            <option value="МИР" />
+                        </datalist>
+                    </div>
+                    <div class="password">
+                        <input required type="password" placeholder="Номер карты" id="card" class="inp" />
+                        <img src="images/free-icon-hide-2767146.png" alt="" class="password_hide" />
+                    </div>
+                    <input required type="text" placeholder="Номер телефона" id="phone" class="inp" />
+
+                    <div class="pr">
+                        <button class="button" type="submit">Добавить</button>
+                        <img src="images/spinner.svg" alt="" class="gif" />
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <div class="wrapper">
+            <section class="user">
+                <div class="select">
+                    <label for="select"></label>
+                    <select id="select">
+                        <option value="новые">новые</option>
+                        <option value="старые">старые</option>
+                    </select>
+                </div>
+            </section>
+            <div class="error_mess">
+                <p class="error_text"></p>
+                <p class="error"></p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

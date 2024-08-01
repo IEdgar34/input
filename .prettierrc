@@ -1,0 +1,8 @@
+{
+    "tabWidth": 4,
+    "printWidth": 120,
+    "bracketSpacing": true,
+    "endOfLine": "auto",
+    "insert_final_newline": true,
+    "newline": 8
+}
